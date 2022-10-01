@@ -54,6 +54,6 @@
 - Now we can think about how to move things more quickly, obviously my key did not work so I had to do this mostly in theory but we can think about ways to make things quick when working in our terminal.
 - I personally had to use a compiler to make my Java file, but if there was a way to edit the file within the terminal, similar to using the cat command and rewriting some portions, it may make the process quicker as one does not need to leave a re-enter the terminal many times to write their file. 
 -Assuming this was possible and the key worked, I could quickly make a change within the terminal to my java file or even multiple, then scp them all into the server without my a password using only 1 command.  
- ### Congrats
+### Congrats
  - You have worked with the remote server, hopefully no issues came up like for me and now you can move and access the server freely for future works!
 

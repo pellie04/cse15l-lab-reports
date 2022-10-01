@@ -4,11 +4,14 @@
 ##  How to use to Remote Server for your Files.
 
 ### Step 1: Setting up Visual Studio Code
+
 1. First begin by install video studio code on your device from this [link](https://code.visualstudio.com/).
     ![vscodeinstall image](visualstudioinstall.png)
 2. Once on the page, download the installer then run it.
-- Due to complications with password changing, the images are from the active directory personal I had used. 
+- Due to complications with password changing, the images are from the active directory personal I had used.
+
 ### Step 2: Connecting Remotely
+
 1. Now that we have VScode open, we can open the terminal to connect remotely.
 2. To open the terminal do Ctrl + ~ or do View > Terminal. 
 3. Now, using our account, we will connect remotely by typing:
@@ -17,7 +20,9 @@
 4. The terminal will then prompt you to enter your password.
 5. Once logged in, there should be a summary of your login like shown.
 ![loginresults image](lab1loginresult.png)
+
 ### Step 3: Commands
+
 1. Now  we can try a couple of commands to explore. Here is a few and what they do:
 - ls **This lists what is within the directory that you are currently in**
 - ls -a **Does the same as ls but shows hidden files**
@@ -26,7 +31,9 @@
 - exit **logs out of the remote server**
 2. Let's try a new command: scp. This commad requires a bit of set up though.
 3. Exit the remote server using the exit command.
+
 ### Step 4: Moving files
+
 1. Now on your own machine create a java file called HelloRemote.java with the following code.
 ![HelloRemoteCode image](HelloRemoteCode.png)
 2. We will now move this file onto the remote server. In the terminal, write **scp HelloRemote.java accountname@ieng6.ucsd.edu:~/**
@@ -50,10 +57,14 @@
 - Now you might be able to connect to the remote server without a password. This did not work for me though, it still asks for a password but I think this issue might have to do with using my active directory as opposed to the class account.
  ![sshkeyfail image](sshkeyfail.png)
  - It says my Macbook is in the file authorized, yet I still need to type the password to log into it.
+
 ### Optimizing
+
 - Now we can think about how to move things more quickly, obviously my key did not work so I had to do this mostly in theory but we can think about ways to make things quick when working in our terminal.
 - I personally had to use a compiler to make my Java file, but if there was a way to edit the file within the terminal, similar to using the cat command and rewriting some portions, it may make the process quicker as one does not need to leave a re-enter the terminal many times to write their file. 
 -Assuming this was possible and the key worked, I could quickly make a change within the terminal to my java file or even multiple, then scp them all into the server without my a password using only 1 command.  
+
 ### Congrats
+
  - You have worked with the remote server, hopefully no issues came up like for me and now you can move and access the server freely for future works!
 

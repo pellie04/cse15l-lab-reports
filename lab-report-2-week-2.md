@@ -62,16 +62,16 @@ class SearchEngine {
     }
 }
 ```
-- It can still be optimize but it current does work, here are a couple of examples of pages ran.
+- Here are a couple of examples of pages ran.
 
 ![image1part1 image](lab-2-images\part1-image1.png)
-- When running this command on the site, the handleRequest method is ran, it then runs through the two if statements, returning false on both, then gets true on the if statmment for if add is included. It splits up the query, finding the s key then the terms after the equals sign, in this case "apple". "apple" gets added to Arraylist of the added strings, then returns the message about the string being added with the returned string. 
+- When running this command on the site, the handleRequest method is ran, which runs through the two if statements, returning false on both, then gets true on the if statmment for add being part of the url. It splits up the query, finding the s key then the terms after the equals sign, in this case "apple". "apple" gets added to Arraylist of the added strings, then returns the message about the string being added with the returned string included. 
 
 ![image3part1 image](lab-2-images\part1-image3.png)
-- This url has the term search, which means that when running the handleRequest, it will return true on the if statement looking for search. This causes it then to split the query for the searched term, then run a for loop checking each term in the array list with the .contains command to see if it contained the search term. It then returns a new List with the terms that returned true. 
+- This url has the term search, which means that when running the handleRequest, it will return true on the if statement looking for search. This causes it then to split the query for the searched term, in this case "app", then run a for loop checking each term in the array list with the .contains command to see if it contained the search term. This means search terms as small as one character to the entire string would work as long as the term contains. It then returns a new List with the terms that returned true. In the case that there were no terms with "app" it would return an empty list. 
 
 ![image2part1 image](lab-2-images\part1-image2.png)
-- This url has a type within it. "seh" is not a command within the java file, so it doesn't pass any of the if checks for either add or search, so it would return the error message. Similarly, if there is no server port, it would return another error message. 
+- This url has a typo within it. Most of the url could be ran if the "seh" was spealt "search". "seh" is not a command within the java file though, so it doesn't pass any of the if checks for either add or search, so it would return the error message. Similarly, if there is no server port, it would return another error message. 
 
 ##  Part 2: Lab 3
 ### Array Methods: averageWithoutLowest
@@ -87,7 +87,7 @@ public void testAverageLowestEmpty(){
         double[] input1 = { 3, 3, 3, 4, 4, 4, 10 };    assertEquals(4.66666, ArrayExamples.averageWithoutLowest(input1), 0.01);  
         }
 ``` 
-- The resons I wrote two tests was because I wanted to check for two different symptoms: 1. It did not return 0 if there was a single input like it was supposed to and 2. if the average was actual calculated correctly. 
+- The reason I wrote two tests was because I wanted to check for two different symptoms: 1. It did not return 0 if there was a single input like it was supposed to and 2. if the average was actual calculated correctly. 
 - When running these tests I got the following results: 
 ![image2part2 image](lab-2-images\part2-image2.png)
 

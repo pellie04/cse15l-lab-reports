@@ -81,8 +81,8 @@ class HelloRemote {
 
 - Now we can think about how to move things more quickly, obviously my key did not work so I had to do this mostly in theory but we can think about ways to make things quick when working in our terminal.
 - I personally had to use a compiler to make my Java file, but if there was a way to edit the file within the terminal, similar to using the cat command and rewriting some portions, it may make the process quicker as one does not need to leave a re-enter the terminal many times to write their file. 
--Assuming this was possible and the key worked, I could quickly make a change within the terminal to my java file or even multiple, then scp them all into the server without my a password using only 1 command.  
--When working thinking about moving mutliple files, we can just extend the command with spaces. In this image I did that by adding the text1-copy.txt as well text1 in the same command. Although there was a file that didn't exist, it was still able to move the other 2 files.
+- Assuming this was possible and the key worked, I could quickly make a change within the terminal to my java file or even multiple, then scp them all into the server without my a password using only 1 command.  
+- When working thinking about moving mutliple files, we can just extend the command with spaces. In this image I did that by adding the text1-copy.txt as well text1 in the same command. Although there was a file that didn't exist, it was still able to move the other 2 files.
 ![sshkeyfail image](optimaltest.png)
 
 - With this knowledge, we could move a large amount of files, even if some of them don't exist. For example, if we wanted to move information about 10 people, but only 7 have information, as long as the file naming is correct we could move those 7 files when trying to move all 10 without many issues. 

@@ -85,7 +85,7 @@ class HelloRemote {
 -When working thinking about moving mutliple files, we can just extend the command with spaces. In this image I did that by adding the text1-copy.txt as well text1 in the same command. Although there was a file that didn't exist, it was still able to move the other 2 files.
 ![sshkeyfail image](optimaltest.png)
 
--With this knowledge, we could move a large amount of files, even if some of them don't exist. For example, if we wanted to move information about 10 people, but only 7 have information, as long as the file naming is correct we could move those 7 files when trying to move all 10 without many issues. 
+- With this knowledge, we could move a large amount of files, even if some of them don't exist. For example, if we wanted to move information about 10 people, but only 7 have information, as long as the file naming is correct we could move those 7 files when trying to move all 10 without many issues. 
 ### Congrats
 
  - You have worked with the remote server, hopefully no issues came up like for me and now you can move and access the server freely for future works!

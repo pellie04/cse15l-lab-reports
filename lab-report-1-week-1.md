@@ -8,7 +8,11 @@
 1. First begin by install video studio code on your device from this [link](https://code.visualstudio.com/).
     ![vscodeinstall image](visualstudioinstall.png)
 2. Once on the page, download the installer then run it.
+<<<<<<< HEAD
 - Due to complications with password changing, the images are from the active directory personal I had used.
+=======
+- Due to complications with password changing, the images are from the active directory personal I had used. 
+>>>>>>> 98fe28341eef5f4380987cf11335506e0fdb34e4
 
 ### Step 2: Connecting Remotely
 

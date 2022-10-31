@@ -111,14 +111,14 @@ technical/plos/journal.pbio.0030131.txt:0
 technical/plos/journal.pbio.0030136.txt:0
 technical/plos/journal.pbio.0030137.txt:0
 ```
-In this example I used -c with the command that looked for the sequence "base pair". It provided the files as well as how many lines contain the sequence, a lot 0's but some 1's and 2's. I used it on a more specific directory because with thousands of files there would be thousands of lines of output with just 0. 
+In this example I used -c with the command that looked for the sequence "base pair". It provided the files as well as how many lines contained the sequence. There were a lot of 0's but some 1's and 2's. I used it on a more specific directory because with thousands of files there would be thousands of lines of output with just 0. 
 
 ```
  grep -c "base pair" technical/biomed/gb-2001-2-7-research0025.txt
 3
 
 ```
-This is what the output looks like when you run the command on just one file alone, as you can see the file path is not listed since it was used for the command in the first place and it prints out the number of lines containing the term base pair, which is 3. You can get a good idea of how much something gets spoken about in a file.
+This is what the output looks like when you run the command on just one file alone, as you can see the file path is not listed since it was used for the command. It prints out the number of lines containing the term base pair, which is 3. You can get a good idea of how much something gets spoken about in a file.
 
 ```
  grep  -c  "the" technical/plos/journal.*.txt
@@ -568,6 +568,29 @@ Similarly to the last example, in this one I look up the term Bush but in all of
 
 
 
-## -
+## -l
 
+The -l (l as in Lazer) option makes the output only print out the file name once when the instance is found regardless of amount found in that file. 
 
+```
+grep -l "the" technical/911report/*.txt
+technical/911report/chapter-1.txt
+technical/911report/chapter-10.txt
+technical/911report/chapter-11.txt
+technical/911report/chapter-12.txt
+technical/911report/chapter-13.1.txt
+technical/911report/chapter-13.2.txt
+technical/911report/chapter-13.3.txt
+technical/911report/chapter-13.4.txt
+technical/911report/chapter-13.5.txt
+technical/911report/chapter-2.txt
+technical/911report/chapter-3.txt
+technical/911report/chapter-5.txt
+technical/911report/chapter-6.txt
+technical/911report/chapter-7.txt
+technical/911report/chapter-8.txt
+technical/911report/chapter-9.txt
+technical/911report/preface.txt
+
+```
+This example helps show how -l can help reduce how much output there can be from a general term. The term "the" is extremely common, but with -l we can reduce every found instance to just one file print. 

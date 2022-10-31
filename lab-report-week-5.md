@@ -571,6 +571,27 @@ Similarly to the last example, in this one I look up the term Bush but in all of
 ## -l
 
 The -l (l as in Lazer) option makes the output only print out the file name once when the instance is found regardless of amount found in that file. 
+```
+	grep -l "illegal" technical/government/*/*.txt
+technical/government/About_LSC/commission_report.txt
+technical/government/Gen_Account_Office/GovernmentAuditingStandards_yb2002ed.txt
+technical/government/Gen_Account_Office/May1998_ai98068.txt
+technical/government/Gen_Account_Office/Statements_Feb28-1997_volume.txt
+technical/government/Gen_Account_Office/Testimony_cg00010t.txt
+technical/government/Gen_Account_Office/ai9868.txt
+technical/government/Gen_Account_Office/d01121g.txt
+technical/government/Gen_Account_Office/d03232sp.txt
+technical/government/Media/Bridging_legal_aid_gap.txt
+technical/government/Media/Butler_Co_attorneys.txt
+technical/government/Media/Entities_Merge.txt
+technical/government/Media/FY_04_Budget_Outlook.txt
+technical/government/Media/Few_who_need.txt
+technical/government/Media/Terrorist_Attack.txt
+technical/government/Media/The_Columbian.txt
+technical/government/Media/Too_Crucial_to_Take_Cut.txt
+technical/government/Media/less_legal_aid.txt
+```
+This example of -l shows which  files in the entire government folder contains the words illegal. This option can work really well in combination with another command or even command option to search for files without producing large amounts of output like a regular grep might. 
 
 ```
 grep -l "the" technical/911report/*.txt
@@ -594,3 +615,9 @@ technical/911report/preface.txt
 
 ```
 This example helps show how -l can help reduce how much output there can be from a general term. The term "the" is extremely common, but with -l we can reduce every found instance to just one file print. 
+
+```
+❯ grep -l "illegal" technical/government/Media/less_legal_aid.txt
+technical/government/Media/less_legal_aid.txt
+```
+I was also curious about what would happen if I used -l on a file and this was the results. It provides just the path, which could help if you are trying to go from relative to absolute, but seeing that there are other commands for that it doesn't seem to have much use. 

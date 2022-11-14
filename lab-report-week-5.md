@@ -1,7 +1,7 @@
 # Lab Report Week 5
 ### By Pierre Ellie
 
-For this week's lab report I chose to explore the grep command's options. As we know, grep by default searches files and prints out if they contain the given sequence of characters. In the print out, if you look through a directory like technical, it will print the path of the file as well as the entire line that the sequence is on, we can change some of these settings to find some different results. 
+For this week's lab report I chose to explore the grep command's options. As we know, grep by default searches files and prints out if they contain the given sequence of characters. In the output, if you look through a directory like technical, it will print the path of the file as well as the entire line that the sequence is on. We can change some of these settings to find some different results. 
 
 ## -c
 

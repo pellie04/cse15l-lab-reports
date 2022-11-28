@@ -4,11 +4,11 @@
 
 - This is the code for my grade.sh file: 
 ```
-# Create your grading script here
+(comment)Create your grading script here
 
 
 
-#SCORE= 0
+(comment)SCORE= 0
 rm -rf student-submission
 rm ListExamples.java
 git clone $1 student-submission

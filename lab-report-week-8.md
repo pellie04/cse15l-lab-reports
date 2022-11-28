@@ -3,7 +3,10 @@
 
 
 - This is the code for my grade.sh file: 
+
+
 ```
+
 (comment)Create your grading script here
 
 
@@ -42,6 +45,7 @@ cat testout.txt
 echo "Some tests failed, see above for details"
 exit
 fi
+
 ```
 
 - Here are some screenshots of the grader in action on a couple of different implementations  of the ListExamples java file:

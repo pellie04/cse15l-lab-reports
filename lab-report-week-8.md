@@ -2,7 +2,7 @@
 ### By Pierre Ellie
 
 
-- This is the code for my grade.sh file: 
+This is the code for my grade.sh file: 
 
 
 ```
